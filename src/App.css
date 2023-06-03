@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  background: white;
+  line-height: 1.3;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Main-content {
+display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Order-block {
+  border: 1px solid black;
+  width: 50%;
+  margin-right: 30px;
+}
+
+.Order-title {
+  margin: 20px 20px;
+}
+
+.Total-price {
+  text-align: end;
+  margin-right: 20px;
+}
+
+.Items-block {
+  border: 1px solid black;
+  width: 50%;
+  padding: 20px;
+}
+
+.Item-title {
+  margin: 0 20px;
+}
+
+.Item {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.Ordered-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px 0;
+}
+
+.Ordered-info {
+  display: flex;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.Delete-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.Total-price {
+  margin-top: 20px;
+}
+
+.Total-price span {
+  border-top: 1px solid red;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Img {
+  width: 80px;
+  height: 80px;
+  background-size: 60px;
+  padding: 10px;
+  border: none;
+}
+
+.Img:hover {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.Item-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  margin-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.Item-info span {
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Item-info span:first-child {
+  font-size: 20px;
+  font-weight: bold;
 }

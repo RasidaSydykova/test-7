@@ -2,10 +2,10 @@ import React from 'react';
 
 
 interface IItemProps {
-  name: string,
-  count: number,
-  price: number,
-  deleteItem: () => void,
+  name: string;
+  count: number;
+  price: number;
+  deleteItem: () => void;
 }
 
 const Item: React.FC<IItemProps> = ({name, count, price, deleteItem}) => {

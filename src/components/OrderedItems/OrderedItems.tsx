@@ -21,9 +21,10 @@ const OrderedItems: React.FC<IOrderItemsProps> = ({items, itemsState, addItem}) 
             addItem={() => addItem(item.name)}
           />
         );
-      })};
+      })}
     </div>
   )
+
 };
 
 export default OrderedItems;
